@@ -1,2 +1,0 @@
-# practiceFoodApp
-Practice Food App
