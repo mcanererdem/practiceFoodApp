@@ -16,14 +16,18 @@
         app:navGraph="@navigation/my_nav_graph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:nestedScrollingEnabled="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bot_nav_view"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bot_nav_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintHeight_max="@dimen/_74sdp"
         app:itemIconTint="#E64A19"
         app:itemTextColor="#E64A19"
+        app:labelVisibilityMode="selected"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
